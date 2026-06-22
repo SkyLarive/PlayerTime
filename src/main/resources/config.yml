@@ -1,0 +1,16 @@
+# PlayerTime - Konfiguration
+
+database:
+  host: localhost
+  port: 3306
+  name: minecraft
+  user: root
+  password: ""
+  # Maximale Anzahl gleichzeitiger DB-Verbindungen im Pool
+  pool-size: 10
+  use-ssl: false
+
+# Wie oft die Spielzeit der Online-Spieler in die DB geschrieben wird (in Sekunden).
+# Kleiner = weniger Verlust bei einem Server-Crash, aber etwas mehr DB-Last.
+# Minimum sind 30 Sekunden.
+save-interval-seconds: 300

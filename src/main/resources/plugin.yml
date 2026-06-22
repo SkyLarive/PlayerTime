@@ -1,0 +1,17 @@
+name: PlayerTime
+version: '${project.version}'
+main: de.skystudios.playertime.PlayerTimePlugin
+api-version: '26.1'
+author: Sky-Studios
+description: Trackt die Spielzeit pro Spieler und speichert sie persistent in MariaDB.
+
+commands:
+  playtime:
+    description: Zeigt die eigene Spielzeit an, mit Berechtigung auch die anderer Spieler.
+    usage: /playtime [Spieler]
+    aliases: [pt, spielzeit]
+
+permissions:
+  playertime.others:
+    description: Erlaubt das Abfragen der Spielzeit anderer Spieler.
+    default: op
